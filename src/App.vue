@@ -2,7 +2,7 @@
   <div id="app">
   
       <the-navbar/>
-      
+
   </div>
 </template>
 
@@ -20,5 +20,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import 'bootstrap';
+@import '/src/styles/main.scss';
 
 </style>
