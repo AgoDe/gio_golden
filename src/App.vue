@@ -1,16 +1,19 @@
 <template>
   <div id="app">
   
-  
+      <the-navbar/>
+      
   </div>
 </template>
 
 <script>
+import TheNavbar from './components/TheNavbar.vue'
 
 
 export default {
   name: 'App',
   components: {
+    TheNavbar
     
   }
 }
