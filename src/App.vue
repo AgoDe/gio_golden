@@ -1,23 +1,16 @@
 <template>
   <div id="app">
-  
-      <the-navbar/>
-
-      <the-jumbo/>
       
+      <router-view/>
   </div>
 </template>
 
 <script>
-import TheJumbo from './components/TheJumbo.vue'
-import TheNavbar from './components/TheNavbar.vue'
 
 
 export default {
   name: 'App',
   components: {
-    TheNavbar,
-    TheJumbo
     
   }
 }
