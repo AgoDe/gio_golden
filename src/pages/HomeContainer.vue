@@ -7,15 +7,22 @@
 
         <div class="container">
 
-
-            <section-title
-            :title="'chi siamo'"
-            />
-
+            <!-- CHI SIAMO -->
+           
             <div class="row">
+               
+
                 <chi-siamo
                 class="col-10"
                 />
+            </div>
+
+            <!-- I NOSTRI CANI -->
+
+            <div class="row">
+
+               
+
             </div>
 
         </div>
@@ -30,15 +37,13 @@
 import TheFooter from '../components/TheFooter.vue'
 import TheJumbo from '../components/TheJumbo.vue'
 import TheNavbar from '../components/TheNavbar.vue'
-import SectionTitle from '../components/SectionTitle.vue'
 import ChiSiamo from '../components/ChiSiamo.vue'
 export default {
     components: {
     TheNavbar,
     TheJumbo,
     TheFooter,
-    SectionTitle,
-    ChiSiamo
+    ChiSiamo,
 },
     
 }
@@ -56,10 +61,12 @@ export default {
         padding-top: 100px;
         height: 600px;
         border-left: $lineWeight $orange solid;
-        position: relative;
+        
 
         .row {
             justify-content: center;
+            position: relative;
+            margin: 50px 0;
         }
 
    }
