@@ -1,6 +1,6 @@
 <template>
     <div class="nostri-cani">
-        
+
     </div>
 </template>
 
@@ -12,6 +12,6 @@ export default {
 
 <style lang="scss" scoped>
     .nostri-cani {
-
+        
     }
 </style>
