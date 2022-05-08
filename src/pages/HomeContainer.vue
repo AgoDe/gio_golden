@@ -11,9 +11,11 @@
             <section-title
             :title="'chi siamo'"
             />
-            
+
             <div class="row">
-                
+                <chi-siamo
+                class="col-10"
+                />
             </div>
 
         </div>
@@ -29,12 +31,14 @@ import TheFooter from '../components/TheFooter.vue'
 import TheJumbo from '../components/TheJumbo.vue'
 import TheNavbar from '../components/TheNavbar.vue'
 import SectionTitle from '../components/SectionTitle.vue'
+import ChiSiamo from '../components/ChiSiamo.vue'
 export default {
     components: {
     TheNavbar,
     TheJumbo,
     TheFooter,
-    SectionTitle
+    SectionTitle,
+    ChiSiamo
 },
     
 }
@@ -49,10 +53,14 @@ export default {
    
     font-family: 'Cabin', sans-serif;
     .container {
+        padding-top: 100px;
         height: 600px;
         border-left: $lineWeight $orange solid;
         position: relative;
 
+        .row {
+            justify-content: center;
+        }
 
    }
 }
