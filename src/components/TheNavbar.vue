@@ -112,11 +112,15 @@ export default {
                 }
             }
 
+
+
             nav {
                 justify-content: flex-end;
                 align-items: center;
 
                 a {
+
+                    font-weight: bold;
                     color: $yellow;
                     text-decoration: none;
                     margin: 0 15px;
