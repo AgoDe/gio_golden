@@ -25,7 +25,7 @@ export default {
 
             targets: '.logo',
             // scale: [5,1],
-            translateX: [-200, 800],
+            translateX: [-800, 0],
             opacity: [0.1,1],
             easing:'spring(2, 200, 20, 0)',
             // easing: "easeOutCirc",
