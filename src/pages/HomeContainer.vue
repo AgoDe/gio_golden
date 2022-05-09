@@ -8,8 +8,7 @@
         <div class="container">
 
             <!-- CHI SIAMO -->
-           
-            <div class="row">
+            <div id="chi-siamo" class="row">
                 <h2>chi siamo</h2>
                 <chi-siamo
                 class="col-10"
@@ -17,10 +16,14 @@
             </div>
 
             <!-- I NOSTRI CANI -->
-            <div class="row">
+            <div id="cani" class="row">
                 <h2>i nostri cani</h2>
-               <cani-container
-               class="col-10"/>
+               <cani-container class="col-10"/>
+            </div>
+
+            <!-- I NOSTRI CUCCIOLI -->
+            <div id="cuccioli" class="row">
+                <cuccioli-container class="col-10"/>
             </div>
 
         </div>
@@ -37,13 +40,15 @@ import TheJumbo from '../components/TheJumbo.vue'
 import TheNavbar from '../components/TheNavbar.vue'
 import ChiSiamo from '../components/ChiSiamo.vue'
 import CaniContainer from '../components/CaniContainer.vue'
+import CuccioliContainer from '../components/CuccioliContainer.vue'
 export default {
     components: {
     TheNavbar,
     TheJumbo,
     TheFooter,
     ChiSiamo,
-    CaniContainer
+    CaniContainer,
+    CuccioliContainer
 },
     
 }
@@ -59,7 +64,7 @@ export default {
     font-family: 'Cabin', sans-serif;
     .container {
         padding: 100px 0;
-        border-left: $lineWeight $orange solid;
+        // border-left: $lineWeight $orange solid;
         
 
         .row {
