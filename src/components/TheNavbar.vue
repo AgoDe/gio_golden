@@ -15,16 +15,16 @@
                 <nav class="col-9 d-none d-lg-flex">
 
                     <!-- <i class="icon-bars"></i> -->
-                    <a class="" href="#">
+                    <a class="" href="#chi-siamo">
                         <p>Chi siamo</p>
                     </a>
-                    <a class="" href="#">
+                    <a class="" href="#cani">
                         <p>I nostri cani</p>
                     </a>
-                    <a class="" href="#">
+                    <a class="" href="#cuccioli">
                         <p>I nostri cuccioli</p>
                     </a>
-                    <a class="" href="#">
+                    <a class="" href="#contatti">
                         <p>Contatti</p>
                     </a>
 

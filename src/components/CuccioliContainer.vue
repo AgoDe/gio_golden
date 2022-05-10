@@ -54,7 +54,7 @@ export default {
        }
    }, // end of data
     mounted() {
-
+        this.autoplay()
     }, // end of mounted
     methods: {
         activeDot: function(index) {
@@ -77,7 +77,16 @@ export default {
             } else {
                 this.activeIndex++
             } 
-        }
+        },
+        autoplay: function() {
+            setInterval(() => {
+                if(this.activeIndex >= this.cuccioli.length -1) {
+                this.activeIndex = 0
+            } else {
+                this.activeIndex++
+            }
+            }, 4000)
+        } 
     }, // end of methods
     
 }
