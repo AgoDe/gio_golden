@@ -9,7 +9,6 @@
 
             <!-- CHI SIAMO -->
             <div id="chi-siamo" class="row">
-                <h2>chi siamo</h2>
                 <chi-siamo
                 class="col-10"
                 />
@@ -17,13 +16,17 @@
 
             <!-- I NOSTRI CANI -->
             <div id="cani" class="row">
-                <h2>i nostri cani</h2>
                <cani-container class="col-10"/>
             </div>
 
             <!-- I NOSTRI CUCCIOLI -->
             <div id="cuccioli" class="row">
                 <cuccioli-container class="col-10"/>
+            </div>
+
+            <!-- CONTATTI -->
+            <div id="contatti">
+                <contatti-container class="col-10"/>
             </div>
 
         </div>
@@ -41,6 +44,7 @@ import TheNavbar from '../components/TheNavbar.vue'
 import ChiSiamo from '../components/ChiSiamo.vue'
 import CaniContainer from '../components/CaniContainer.vue'
 import CuccioliContainer from '../components/CuccioliContainer.vue'
+import ContattiContainer from '../components/ContattiContainer.vue'
 export default {
     components: {
     TheNavbar,
@@ -48,7 +52,8 @@ export default {
     TheFooter,
     ChiSiamo,
     CaniContainer,
-    CuccioliContainer
+    CuccioliContainer,
+    ContattiContainer
 },
     
 }
@@ -71,6 +76,8 @@ export default {
             justify-content: center;
             position: relative;
             margin: 50px 0;
+            border: 1px solid black;
+
         }
 
    }
