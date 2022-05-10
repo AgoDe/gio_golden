@@ -1,6 +1,7 @@
 <template>
     
     <div class="home-container">
+
         <the-navbar/>
     
         <the-jumbo/>
@@ -9,9 +10,7 @@
 
             <!-- CHI SIAMO -->
             <div id="chi-siamo" class="row">
-                <chi-siamo
-                class="col-10"
-                />
+                <chi-siamo class="col-10"/>
             </div>
 
             <!-- I NOSTRI CANI -->
@@ -25,7 +24,7 @@
             </div>
 
             <!-- CONTATTI -->
-            <div id="contatti">
+            <div id="contatti" class="row">
                 <contatti-container class="col-10"/>
             </div>
 
@@ -71,15 +70,13 @@ export default {
         padding: 100px 0;
         // border-left: $lineWeight $orange solid;
         
-
         .row {
             justify-content: center;
             position: relative;
-            margin: 50px 0;
+            padding: 50px 0;
             border: 1px solid black;
 
         }
-
    }
 }
 

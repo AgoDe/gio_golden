@@ -123,7 +123,7 @@ export default {
 <style lang="scss" scoped>
 @import 'bootstrap';
 @import '/src/styles/main.scss';
-@import '/src/styles/slider.scss';
 @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import '/src/styles/slider.scss';
    
 </style>
