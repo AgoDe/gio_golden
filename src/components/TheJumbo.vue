@@ -41,6 +41,7 @@ export default {
 @import '/src/styles/main.scss';
 
     .jumbotron {
+        margin-top: 60px;
        background: url('https://via.placeholder.com/2000x600') center center;
        height: 600px;
        border-bottom: $lineWeight $orange solid;

@@ -3,20 +3,21 @@
         <div class="row">
             <!-- info contatti -->
             <div class="col-12 col-lg-6 info-container">
-
+                <div class="subtitle">
+                    <h4>I nostri contatti</h4>
+                </div>
                 <div class="info-box">
-
-                   
+   
                     <a href="">
                        <i class="icon-mobile"></i>
                        <span>348 8879376</span>
                     </a>
 
-                    <a href="">
+                    <a href="" class="mt-3">
                        <i class="icon-at"></i>
                        <span>info@giogolden.it</span>
                     </a>
-                    <a href="">
+                    <a href="" class="mt-3">
                        <i class="icon-location"></i>
                        <span>strada Marscianese, 5 - 06132, Perugia</span>
                     </a>
@@ -27,7 +28,6 @@
                     Vieni a trovarci nelle nostre pagine social!
                 </div>
                 <div class="social-box">
-
                     <a href="https://it-it.facebook.com/giogoldenumbria/" class="facebook">
                        <i class="icon-facebook"></i>
                     </a>
@@ -43,7 +43,12 @@
 
             <!-- form contatto -->
             <div class="col-12 col-lg-6 form-container">
+                <div class="subtitle">
+                    <h4>Contattaci!</h4>
+                    <h6>compila il form e verrari ricontattato al più presto</h6>
+                </div>
 
+                <form-contatti/>
             </div>
             <!-- end of form contatto -->
         </div>
@@ -51,8 +56,11 @@
 </template>
 
 <script>
+import FormContatti from './FormContatti.vue'
 export default {
-    
+    components: { 
+        FormContatti
+    },
 }
 </script>
 
@@ -63,31 +71,36 @@ export default {
     .contatti {
 
         .row {
-            
+
+            .subtitle {
+                height: 100px;
+
+                h4, h6 {
+                       text-align: center;
+                       color: $orange;
+               }
+            }
             .info-container{
-                border: 1px solid blue;
                 .info-box {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
 
                     a {
-                        box-sizing: content-box;
-                        width: 450px;
+                        
+                        width: 80%;
                         height: 50px;
-                        line-height: 50px;
-                        border: 3px $orange solid;
-                        border-radius:100px;
-                        color: $orange;
-                        margin: 15px 0;
+                        border: 2px $orange solid;
+                        border-radius:25px;
+                        color: $yellow;
                         text-decoration: none;
-                        font-size: 20px;
+                        font-size: 18px;
 
                         i{
-                            width: 50px;
-                            height: 50px;
+                            width: 46px;
+                            height: 46px;
+                            line-height: 46px;
                             border-radius: 50%;
-                            line-height: 50px;
                             background: $yellow;
                             text-align: center;
                             margin-right:15px ;
@@ -118,8 +131,6 @@ export default {
                         transition: 0.3s;
                         opacity: 0.9;
 
-
-
                         &:hover  {
                            font-size: 33px;
                            opacity: 1;
@@ -137,12 +148,6 @@ export default {
 
                     }
                 }
-            }
-
-            .form-container {
-                border: 1px solid red;
-
-
             }
 
         }

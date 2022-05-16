@@ -96,8 +96,12 @@ export default {
 
 
 .big-container {
-
+    position: fixed;
+    top: 0;
+    width: 100%;
     border-bottom: $lineWeight $orange solid;
+    background: white;
+    z-index: 1001;
 
     .container {
 
