@@ -41,16 +41,16 @@
                     <div class="mobile-nav"
                     v-if="nav_visible"
                     >
-                        <a class="" href="#">
+                        <a class="" href="#chi-siamo">
                             Chi siamo
                         </a>
-                        <a class="" href="#">
+                        <a class="" href="#cani">
                             I nostri cani
                         </a>
-                        <a class="" href="#">
+                        <a class="" href="#cuccioli">
                             I nostri cuccioli
                         </a>
-                        <a class="" href="#">
+                        <a class="" href="#contatti">
                             Contatti
                         </a>
                     </div>
